@@ -334,6 +334,9 @@ declare -A COMMUNITY
 declare -A ENTERPRISE
 
 COMMUNITY=(
+     [dbms.security.procedures.unrestricted]="apoc.export.*,apoc.import.*"
+     [apoc.export.file.enabled]="true"
+     [apoc.import.file.enabled]="true"
      [dbms.tx_log.rotation.retention_policy]="100M size"
      [dbms.memory.pagecache.size]="512M"
      [dbms.connectors.default_listen_address]="0.0.0.0"
