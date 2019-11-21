@@ -346,6 +346,9 @@ COMMUNITY=(
 )
 
 ENTERPRISE=(
+     [dbms.security.procedures.unrestricted]="apoc.export.*,apoc.import.*"
+     [apoc.export.file.enabled]="true"
+     [apoc.import.file.enabled]="true"
      [causal_clustering.transaction_listen_address]="0.0.0.0:6000"
      [causal_clustering.raft_listen_address]="0.0.0.0:7000"
      [causal_clustering.discovery_listen_address]="0.0.0.0:5000"
